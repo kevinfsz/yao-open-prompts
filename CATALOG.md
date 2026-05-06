@@ -1,20 +1,20 @@
 # 提示词目录
 
-当前共拆分出 **42** 个提示词文件。
+当前共拆分出 **54** 个提示词文件。
 
 ## 分类统计
 
 | 分类 | 数量 | 说明 |
 | --- | ---: | --- |
-| AI方法 | 5 | 元提示词、反编译和提示词工程方法。 |
-| AI工作 | 7 | 面向企业、销售、客服、PPT、网页等生产力场景。 |
-| AI学习 | 10 | 学习方法、记忆术、习惯养成和学习助理。 |
+| AI方法 | 7 | 元提示词、反编译、网页逆向和提示词工程方法。 |
+| AI工作 | 10 | 面向企业、合同、销售、客服、产品原型、PPT、网页等生产力场景。 |
+| AI学习 | 11 | 学习方法、记忆术、费曼提问、习惯养成和学习助理。 |
 | AI生活 | 2 | 健康、亲子歌曲等生活场景。 |
-| AI教育 | 3 | 儿童教育和小游戏创作。 |
-| AI内容 | 10 | 写作、标题、视频、图像和 PPT 创意。 |
+| AI教育 | 4 | 儿童教育、互动学习页面和小游戏创作。 |
+| AI内容 | 13 | 写作、润色、标题、公众号 HTML、视频、图像和 PPT 创意。 |
 | AI编程 | 1 | 架构设计和编程协作。 |
-| AI营销 | 2 | GEO 内容生成、改写和营销增长。 |
-| AI思考 | 2 | 记忆、标题和思维类灵感提示词。 |
+| AI营销 | 3 | GEO 内容生成、改写、Schema.org 结构化数据和营销增长。 |
+| AI思考 | 3 | 批判思维、记忆、标题和思维类灵感提示词。 |
 
 ## 全量索引
 
@@ -23,11 +23,16 @@
 | AI方法 | 反编译 | [文章反编译：结构与风格逆向分析](prompts/01-ai-methods/article-reverse-engineering.md) | active | 文章反编译 |
 | AI方法 | 反编译 | [图片反编译：RTF通用提示词](prompts/01-ai-methods/image-reverse-engineering.md) | active | 图片反编译 |
 | AI方法 | 元提示词 | [智能元提示词生成系统](prompts/01-ai-methods/interactive-rtf-meta-prompt-system.md) | active | 元提示词 |
+| AI方法 | 元提示词 | [LISP结构化元提示词系统 V0.8](prompts/01-ai-methods/lisp-rtf-meta-prompt-v08.md) | active | 元提示词 |
 | AI方法 | 元提示词 | [元提示词：生成提示词的提示词](prompts/01-ai-methods/meta-prompt-rtf-generator.md) | active | 元提示词 |
 | AI方法 | 反编译 | [视频反编译：短视频截图拆解分析](prompts/01-ai-methods/video-reverse-engineering.md) | active | 视频反编译 |
+| AI方法 | 反向工程 | [网页逆向工程与泛化生成提示词](prompts/01-ai-methods/webpage-reverse-engineering.md) | active | 网页逆向工程 |
 | AI工作 | 企业调研 | [从0到1：用AI深度调研企业的完整方法论](prompts/02-ai-work/company-research-methodology.md) | active | 企业调研 |
+| AI工作 | 合同 | [合同生成器](prompts/02-ai-work/contract-generator.md) | active | 合同 |
 | AI工作 | 客服 | [AI客服系统提示词](prompts/02-ai-work/customer-service-system-prompt.md) | active | 客服 |
+| AI工作 | 产品原型 | [抖音风格产品原型生成器](prompts/02-ai-work/douyin-style-product-prototype-generator.md) | active | 产品原型 |
 | AI工作 | PPT | [生成高质量PPT](prompts/02-ai-work/high-quality-ai-ppt-generator.md) | active | PPT |
+| AI工作 | PPT | [网页PPT生成器 V3.0](prompts/02-ai-work/html-ppt-generator-v3.md) | active | PPT |
 | AI工作 | 转化页 | [个性化高转化着陆页生成器](prompts/02-ai-work/landing-page-generator.md) | active | 着陆页 |
 | AI工作 | 助教 | [个性化AI学习助教](prompts/02-ai-work/personalized-ai-learning-tutor.md) | active | 助教 |
 | AI工作 | 销售 | [AI私域销售提示词](prompts/02-ai-work/private-domain-sales-prompt.md) | active | 销售 |
@@ -35,6 +40,7 @@
 | AI学习 | 关键词学习 | [关键词学习法AI助手](prompts/03-ai-learning/keyword-learning-assistant.md) | active | 关键词 |
 | AI学习 | 学习方法 | [康奈尔笔记法：结构清晰才好记](prompts/03-ai-learning/learning-methods/cornell-note-method.md) | active | 学习方法 |
 | AI学习 | 学习方法 | [费曼学习法：讲出来才算学会](prompts/03-ai-learning/learning-methods/feynman-learning-method.md) | active | 学习方法 |
+| AI学习 | 学习方法 | [AI费曼提问学习法](prompts/03-ai-learning/learning-methods/feynman-questioning-coach.md) | active | 费曼学习法 |
 | AI学习 | 学习方法 | [关键词学习法：系统性抓重点](prompts/03-ai-learning/learning-methods/keyword-learning-method.md) | active | 学习方法 |
 | AI学习 | 学习方法 | [番茄学习法：专注力才是生产力](prompts/03-ai-learning/learning-methods/pomodoro-learning-coach.md) | active | 学习方法 |
 | AI学习 | 学习方法 | [西蒙学习法：任务拆小，逐步完成](prompts/03-ai-learning/learning-methods/simon-learning-method.md) | active | 学习方法 |
@@ -47,7 +53,9 @@
 | AI教育 | 儿童游戏 | [儿童小游戏：迷宫挖掘游戏](prompts/05-ai-education/children-games/child-game-maze-digging.md) | active | 儿童游戏 |
 | AI教育 | 儿童游戏 | [儿童小游戏：像素赛车躲避游戏](prompts/05-ai-education/children-games/child-game-pixel-racing.md) | active | 儿童游戏 |
 | AI教育 | 儿童游戏 | [儿童小游戏：鲨鱼抓小鱼](prompts/05-ai-education/children-games/child-game-shark-fish.md) | active | 儿童游戏 |
+| AI教育 | 儿童学习 | [儿童互动学习页面生成提示词](prompts/05-ai-education/children-learning-page-lisp.md) | active | 儿童学习 |
 | AI内容 | 视频创意 | [切万物视频提示词生成器](prompts/06-ai-content/cut-everything-video-generator.md) | active | 视频创意 |
+| AI内容 | 文章润色 | [智能文章润色系统 V3.0](prompts/06-ai-content/humanized-writing/humanized-writing-polish-v3.md) | active | 文章润色 |
 | AI内容 | 写作 | [AI写作自然化提示词 V1.0](prompts/06-ai-content/humanized-writing/humanized-writing-v1.md) | active | 写作 |
 | AI内容 | 写作 | [AI写作自然化提示词 V2.0](prompts/06-ai-content/humanized-writing/humanized-writing-v2.md) | active | 写作 |
 | AI内容 | 写作 | [知识库AI写作法](prompts/06-ai-content/knowledge-base-writing-rebuilder.md) | active | 知识库 |
@@ -57,8 +65,12 @@
 | AI内容 | 仿写 | [三毛风格回忆录生成器](prompts/06-ai-content/sanmao-style-memoir-generator.md) | active | 仿写 |
 | AI内容 | 视频创意 | [Sora2主人公视频创意生成器](prompts/06-ai-content/sora2-character-video-ideas.md) | active | Sora2 |
 | AI内容 | 标题 | [标题炼金术师（内容创作版）](prompts/06-ai-content/title-alchemist-content.md) | active | 标题 |
+| AI内容 | 公众号 | [微信公众号文章HTML生成器](prompts/06-ai-content/wechat-article-html-generator.md) | active | 微信公众号 |
+| AI内容 | 标题 | [小红书爆款标题生成器](prompts/06-ai-content/xiaohongshu-title-generator.md) | active | 小红书 |
 | AI编程 | 架构 | [AI智能架构师](prompts/07-ai-coding/ai-system-architect.md) | active | 架构设计 |
 | AI营销 | GEO | [GEO文章生成系统](prompts/08-ai-marketing/geo-article-generator.md) | active | GEO |
 | AI营销 | GEO | [GEO文章改写系统](prompts/08-ai-marketing/geo-article-rewriter.md) | active | GEO |
+| AI营销 | GEO | [Schema.org结构化数据GEO优化提示词](prompts/08-ai-marketing/schema-org-geo-optimization.md) | active | GEO |
 | AI思考 | 记忆 | [记忆宫殿的建筑大师](prompts/09-ai-thinking/memory-palace-architect.md) | active | 记忆宫殿 |
+| AI思考 | 批判思维 | [自我批判大师](prompts/09-ai-thinking/self-critique-master.md) | active | 批判思维 |
 | AI思考 | 标题 | [标题炼金术师（思考版）](prompts/09-ai-thinking/title-alchemist-thinking.md) | active | 标题 |

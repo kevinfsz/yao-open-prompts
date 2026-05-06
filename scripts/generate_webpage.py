@@ -28,15 +28,15 @@ CATEGORY_ORDER = [
 ]
 
 CATEGORY_DESCRIPTIONS = {
-    "AI方法": "元提示词、反编译、提示词工程框架",
-    "AI工作": "企业调研、客服、销售、助教、PPT、网页",
-    "AI学习": "学习方法、记忆术、习惯养成",
+    "AI方法": "元提示词、反编译、网页逆向、提示词工程框架",
+    "AI工作": "企业调研、合同、客服、销售、产品原型、PPT、网页",
+    "AI学习": "学习方法、记忆术、费曼提问、习惯养成",
     "AI生活": "健康、亲子、生活创作",
-    "AI教育": "儿童教育、小游戏生成、教学活动",
-    "AI内容": "写作、标题、仿写、视频、图像、PPT创意",
+    "AI教育": "儿童教育、互动学习页面、小游戏生成、教学活动",
+    "AI内容": "写作、润色、标题、公众号HTML、视频、图像、PPT创意",
     "AI编程": "架构设计、系统方案、开发协作",
-    "AI营销": "GEO文章生成、GEO改写、AI搜索优化",
-    "AI思考": "记忆宫殿、标题灵感、思维工具",
+    "AI营销": "GEO文章生成、Schema.org结构化数据、AI搜索优化",
+    "AI思考": "批判思维、记忆宫殿、标题灵感、思维工具",
 }
 
 CATEGORY_COLORS = {
@@ -55,15 +55,20 @@ REPRESENTATIVE_SLUGS = {
     "AI方法": [
         "meta-prompt-rtf-generator",
         "interactive-rtf-meta-prompt-system",
+        "lisp-rtf-meta-prompt-v08",
+        "webpage-reverse-engineering",
         "image-reverse-engineering",
         "article-reverse-engineering",
         "video-reverse-engineering",
     ],
     "AI工作": [
         "company-research-methodology",
+        "contract-generator",
         "customer-service-system-prompt",
         "private-domain-sales-prompt",
+        "douyin-style-product-prototype-generator",
         "high-quality-ai-ppt-generator",
+        "html-ppt-generator-v3",
         "world-class-webpage-generator",
     ],
     "AI学习": [
@@ -71,6 +76,7 @@ REPRESENTATIVE_SLUGS = {
         "keyword-learning-assistant",
         "memory-technique-coach",
         "feynman-learning-method",
+        "feynman-questioning-coach",
         "pomodoro-learning-coach",
     ],
     "AI生活": [
@@ -78,14 +84,18 @@ REPRESENTATIVE_SLUGS = {
         "personalized-parent-child-song",
     ],
     "AI教育": [
+        "children-learning-page-lisp",
         "child-game-maze-digging",
         "child-game-pixel-racing",
         "child-game-shark-fish",
     ],
     "AI内容": [
         "humanized-writing-v2",
+        "humanized-writing-polish-v3",
         "knowledge-base-writing-rebuilder",
         "title-alchemist-content",
+        "xiaohongshu-title-generator",
+        "wechat-article-html-generator",
         "sora2-character-video-ideas",
         "cut-everything-video-generator",
         "nano-banana",
@@ -98,8 +108,10 @@ REPRESENTATIVE_SLUGS = {
     "AI营销": [
         "geo-article-generator",
         "geo-article-rewriter",
+        "schema-org-geo-optimization",
     ],
     "AI思考": [
+        "self-critique-master",
         "memory-palace-architect",
         "title-alchemist-thinking",
     ],
@@ -682,7 +694,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。系列型提示词已收拢为合集文件，例如 Nano Banana 和 Nano Banana PPT，方便浏览、复制和持续维护。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。新增内容已补充到合同、产品原型、网页 PPT、公众号 HTML、Schema.org GEO 和批判思维等场景；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
@@ -726,7 +738,8 @@ def build_html(prompts: list[Prompt]) -> str:
 def main() -> None:
     prompts = load_prompts()
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(build_html(prompts), encoding="utf-8")
+    html = "\n".join(line.rstrip() for line in build_html(prompts).splitlines()) + "\n"
+    OUTPUT.write_text(html, encoding="utf-8")
     print(f"Generated {OUTPUT.relative_to(ROOT)} with {len(prompts)} prompts.")
 
 
