@@ -1,6 +1,10 @@
-# AI精准 36 个提示词 V2.1
+# AI内容目录
 
-本目录收录 `/Users/laoyao/AI Coding/05-Prompts/Products/AIJingzhun/36个提示词2.1版本.md` 拆分出的 36 个智能体提示词。每个文件都保留独立 Prompt 正文、开场引导语和示例输入输出，便于单独复制、测试和迭代。
+本目录存放写作、标题、公众号 HTML、短视频、图像、PPT 创意等内容生产类提示词。
+
+其中 `aijingzhun-01-*.md` 到 `aijingzhun-36-*.md` 是从 `/Users/laoyao/AI Coding/05-Prompts/Products/AIJingzhun/36个提示词2.1版本.md` 拆分出的 36 个 AI精准智能体提示词。它们已直接并入本级目录，不再单独放在子文件夹中；每个文件保留独立 Prompt 正文、开场引导语和示例输入输出，便于单独复制、测试和迭代。
+
+## AI精准 36 个提示词 V2.1
 
 ## 使用建议
 

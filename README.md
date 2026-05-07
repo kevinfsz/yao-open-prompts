@@ -16,7 +16,7 @@
 
 ## 专题入口
 
-**[AI精准 36 个提示词 V2.1](prompts/06-ai-content/aijingzhun-36-agents/README.md)**：从 AIJingzhun 产品提示词包拆分出的 36 个智能体，覆盖短视频文案、人设风格、平台专精、行业垂直、直播转化、私域成交、AI 绘画、数据复盘和爆款重构。
+**[AI精准 36 个提示词 V2.1](prompts/06-ai-content/README.md)**：从 AIJingzhun 产品提示词包拆分出的 36 个智能体，已直接并入 `prompts/06-ai-content/`，按 `aijingzhun-01` 到 `aijingzhun-36` 排序，覆盖短视频文案、人设风格、平台专精、行业垂直、直播转化、私域成交、AI 绘画、数据复盘和爆款重构。
 
 ## 仓库结构
 

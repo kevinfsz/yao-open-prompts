@@ -132,8 +132,8 @@ COLLECTIONS = [
     {
         "kicker": "专题入口",
         "title": "AI精准 36 个提示词 V2.1",
-        "description": "从 AIJingzhun 产品提示词包拆分出的 36 个智能体，覆盖短视频文案、人设风格、平台专精、行业垂直、直播转化、私域成交、AI绘画、数据复盘和爆款重构。",
-        "href": f"{REPO_URL}/blob/main/prompts/06-ai-content/aijingzhun-36-agents/README.md",
+        "description": "从 AIJingzhun 产品提示词包拆分出的 36 个智能体，已直接并入 AI内容目录，按 aijingzhun-01 到 aijingzhun-36 排序，覆盖短视频文案、人设风格、平台专精、行业垂直、直播转化、私域成交、AI绘画、数据复盘和爆款重构。",
+        "href": f"{REPO_URL}/blob/main/prompts/06-ai-content/README.md",
         "meta": "36 agents",
     },
 ]
@@ -891,7 +891,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」，并新增「AI精准 36 个提示词 V2.1」专题入口；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」；「AI精准 36 个提示词 V2.1」已直接并入 AI内容目录并按编号排序，方便浏览、复制和持续维护。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
