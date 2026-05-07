@@ -1,7 +1,7 @@
 ---
 title: "Topic Planner"
 category: "AI Content"
-subcategory: "Content Tool"
+subcategory: "Content Tools"
 source_section: "prompts/06-ai-content/topic-planner.md"
 author: "Yao Jingang"
 version: "V2.1-en"

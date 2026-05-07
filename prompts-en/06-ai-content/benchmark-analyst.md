@@ -1,7 +1,7 @@
 ---
 title: "Benchmark Analyst"
 category: "AI Content"
-subcategory: "Content Tool"
+subcategory: "Content Tools"
 source_section: "prompts/06-ai-content/benchmark-analyst.md"
 author: "Yao Jingang"
 version: "V2.1-en"

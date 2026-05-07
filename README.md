@@ -1,6 +1,6 @@
 # Yao Open Prompts
 
-[网页导航](https://yaojingang.github.io/yao-open-prompts/) · [完整目录](CATALOG.md) · [English README](README.en.md) · [英文提示词](prompts-en/06-ai-content/README.md) · [GitHub 仓库](https://github.com/yaojingang/yao-open-prompts)
+[网页导航](https://yaojingang.github.io/yao-open-prompts/) · [完整目录](CATALOG.md) · [English README](README.en.md) · [英文提示词](prompts-en/README.md) · [GitHub 仓库](https://github.com/yaojingang/yao-open-prompts)
 
 《姚金刚提示词合集》的开源版本，一个面向真实工作、学习、内容、营销和生活场景的中文 AI 提示词库。
 
@@ -20,7 +20,7 @@
 
 **[25 个 GEO 营销实战模板](prompts/08-ai-marketing/README.md)**：从《AI营销：从SEO到GEO》提示词合集拆分，覆盖机会判断、原理分析、内容工程、信源建设、数据监测、增长诊断和合规风险。
 
-**[English README](README.en.md)**：英文说明文档入口，对应导航到 [36 个英文内容与运营提示词](prompts-en/06-ai-content/README.md)，英文提示词统一存放在 `prompts-en/` 下。
+**[English README](README.en.md)**：英文说明文档入口，对应导航到 [116 个英文提示词](prompts-en/README.md)，英文提示词按 `prompts/` 的相同路径完整镜像在 `prompts-en/` 下。
 
 ## 仓库结构
 

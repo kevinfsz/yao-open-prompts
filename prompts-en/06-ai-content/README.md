@@ -1,78 +1,57 @@
-# English Content Prompts
+# AI Content
 
-This directory contains 36 English prompt files synchronized from the Chinese content and operations prompt set.
+Writing, copywriting, platform operations, industry content, image prompts, and content review.
 
-Each file keeps the same one-prompt-per-file structure, uses English frontmatter, and points back to its Chinese source file through `source_section`.
+Prompt files: **49**.
 
-## Usage
-
-1. Open the prompt that matches your task.
-2. Copy the `Prompt` section into your AI model.
-3. Replace `{{user_information}}` with your real task details.
-4. Test the output and adapt tone, platform, and constraints as needed.
-
-## Copywriting
-
-| No. | Prompt | Best For |
-| ---: | --- | --- |
-| 1 | [Hook Opening Copy](hook-opening-copy.md) | Create high-retention opening hooks that make viewers want to keep watching within the first three seconds. |
-| 2 | [Seven-Second Account Launch Copy](seven-second-account-launch-copy.md) | Write short launch scripts for new accounts that need fast trust, clear positioning, and early engagement. |
-| 3 | [Viral Opening Framework](viral-opening-copy.md) | Design complete opening structures that combine hook, context bridge, and value preview. |
-| 4 | [Spoken Viral Script](spoken-viral-script.md) | Produce full spoken short-video scripts with a strong opening, clear rhythm, emotional progression, and closing action. |
-| 5 | [High-Engagement Copy](high-engagement-copy.md) | Create copy that encourages saves, comments, shares, and meaningful interaction without feeling forced. |
-| 6 | [Sharp Commentary Copy](sharp-commentary-copy.md) | Write direct, opinionated commentary that feels clear, bold, and memorable while staying within safe boundaries. |
-
-## Persona Style
-
-| No. | Prompt | Best For |
-| ---: | --- | --- |
-| 7 | [Life Advice Blogger](life-advice-blogger.md) | Create grounded life-advice content that feels experienced, clear, and useful rather than preachy. |
-| 8 | [Warm Conversation Blogger](warm-conversation-blogger.md) | Write warm, delicate, emotionally supportive content that helps readers feel seen and understood. |
-| 9 | [Audience Voice Blogger](audience-voice-blogger.md) | Say what the audience feels but cannot easily express, turning private emotions into highly resonant content. |
-
-## Content Tool
-
-| No. | Prompt | Best For |
-| ---: | --- | --- |
-| 10 | [Title Optimizer](title-optimizer.md) | Turn plain titles into clearer, more clickable, and platform-appropriate titles without misleading the audience. |
-| 11 | [Topic Planner](topic-planner.md) | Plan topic systems for creators or brands based on positioning, audience needs, platform rhythm, and long-term growth. |
-| 12 | [Benchmark Analyst](benchmark-analyst.md) | Analyze benchmark accounts or viral content to extract reusable strategies without copying surface-level style. |
-
-## Platform Operations
-
-| No. | Prompt | Best For |
-| ---: | --- | --- |
-| 13 | [Douyin Viral Planner](douyin-viral-planner.md) | Plan Douyin-style short videos with strong hooks, fast rhythm, clear emotion, and platform-fit interaction. |
-| 14 | [Bilibili Creator Assistant](bilibili-up-assistant.md) | Help Bilibili creators plan topics, scripts, titles, covers, chapters, and community interaction for deeper content. |
-| 15 | [WeChat Article Expert](wechat-article-expert.md) | Write structured WeChat articles with a strong opening, narrative flow, practical value, and share-worthy conclusion. |
-| 16 | [WeChat Channels Operator](video-account-operator.md) | Plan WeChat Channels content with social recommendation, private-domain linkage, and steady account growth in mind. |
-| 30 | [Xiaohongshu Graphic Expert](xiaohongshu-graphic-expert.md) | Create Xiaohongshu-style graphic post concepts with strong cover text, useful body copy, and authentic sharing tone. |
-
-## Industry Content
-
-| No. | Prompt | Best For |
-| ---: | --- | --- |
-| 17 | [Parenting Content Expert](parenting-content-expert.md) | Turn parenting questions into warm, practical, and responsible content for parents and caregivers. |
-| 18 | [Food Review Content Expert](food-review-content-expert.md) | Create vivid food-review content that makes viewers understand taste, scene, value, and reason to visit. |
-| 19 | [Fitness Content Expert](fitness-content-expert.md) | Create fitness content that is practical, motivating, and safety-aware for everyday users. |
-| 20 | [Fashion Content Expert](fashion-content-expert.md) | Create practical fashion content that helps audiences understand style, matching logic, and wearable choices. |
-| 21 | [Travel Guide Content Expert](travel-guide-content-expert.md) | Create travel content that combines destination appeal, itinerary clarity, practical tips, and honest expectations. |
-| 22 | [Workplace Content Expert](workplace-content-expert.md) | Create workplace content that gives concrete advice on communication, growth, decisions, and professional judgment. |
-| 23 | [Personal Finance Content Expert](personal-finance-content-expert.md) | Explain personal finance concepts in accessible, practical language for everyday audiences. |
-| 24 | [Pet Content Expert](pet-content-expert.md) | Create pet content that is useful, warm, and engaging for pet owners while staying responsible. |
-| 25 | [Home Decoration Content Expert](home-decoration-content-expert.md) | Create home-decoration content that turns design ideas into practical, visually clear, and budget-aware guidance. |
-| 26 | [Education and Learning Content Expert](education-learning-content-expert.md) | Turn knowledge into clear, engaging learning content that helps audiences understand and remember. |
-| 27 | [Relationship Content Expert](relationship-content-expert.md) | Create relationship content that is emotionally precise, psychologically aware, and respectful. |
-| 28 | [Tech and Digital Content Expert](tech-digital-content-expert.md) | Explain technology, digital products, and buying decisions in plain language for general audiences. |
-
-## Operations Support
-
-| No. | Prompt | Best For |
-| ---: | --- | --- |
-| 29 | [Livestream Script Planner](livestream-script-planner.md) | Plan livestream scripts that attract viewers, keep attention, explain value, handle objections, and guide conversion. |
-| 31 | [Private-Domain Sales Script Expert](private-domain-sales-script.md) | Write one-to-one sales conversation scripts for private-domain channels with trust, empathy, and clear next steps. |
-| 32 | [AI Image Prompt Generator](ai-image-prompt-generator.md) | Transform abstract visual ideas into detailed English prompts for image-generation tools. |
-| 33 | [Comment Section Operator](comment-section-operator.md) | Generate comment strategies and reply templates that increase discussion quality and community engagement. |
-| 34 | [Interview Outline Planner](interview-outline-planner.md) | Design interview outlines that move from context to depth, reveal stories, and create useful clips. |
-| 35 | [Content Data Review Diagnostician](content-data-review-diagnostician.md) | Diagnose content performance using available metrics and turn findings into practical improvement actions. |
-| 36 | [Viral Remix Deconstruction Rewriter](viral-remix-deconstruction-rewriter.md) | Deconstruct a viral piece into structure, emotional logic, and reusable patterns, then rewrite it into an original version. |
+| Prompt | Subcategory | Source |
+| --- | --- | --- |
+| [AI Image Prompt Generator](ai-image-prompt-generator.md) | Operations Support | `prompts/06-ai-content/ai-image-prompt-generator.md` |
+| [Audience Voice Blogger](audience-voice-blogger.md) | Persona Style | `prompts/06-ai-content/audience-voice-blogger.md` |
+| [Benchmark Analyst](benchmark-analyst.md) | Content Tools | `prompts/06-ai-content/benchmark-analyst.md` |
+| [Bilibili Creator Assistant](bilibili-up-assistant.md) | Platform Operations | `prompts/06-ai-content/bilibili-up-assistant.md` |
+| [Comment Section Operator](comment-section-operator.md) | Operations Support | `prompts/06-ai-content/comment-section-operator.md` |
+| [Content Data Review Diagnostician](content-data-review-diagnostician.md) | Operations Support | `prompts/06-ai-content/content-data-review-diagnostician.md` |
+| [Cut Everything Video Generator](cut-everything-video-generator.md) | 06 AI Content | `prompts/06-ai-content/cut-everything-video-generator.md` |
+| [Douyin Viral Planner](douyin-viral-planner.md) | Platform Operations | `prompts/06-ai-content/douyin-viral-planner.md` |
+| [Education and Learning Content Expert](education-learning-content-expert.md) | Industry Content | `prompts/06-ai-content/education-learning-content-expert.md` |
+| [Fashion Content Expert](fashion-content-expert.md) | Industry Content | `prompts/06-ai-content/fashion-content-expert.md` |
+| [Fitness Content Expert](fitness-content-expert.md) | Industry Content | `prompts/06-ai-content/fitness-content-expert.md` |
+| [Food Review Content Expert](food-review-content-expert.md) | Industry Content | `prompts/06-ai-content/food-review-content-expert.md` |
+| [High-Engagement Copy](high-engagement-copy.md) | Copywriting | `prompts/06-ai-content/high-engagement-copy.md` |
+| [Home Decoration Content Expert](home-decoration-content-expert.md) | Industry Content | `prompts/06-ai-content/home-decoration-content-expert.md` |
+| [Hook Opening Copy](hook-opening-copy.md) | Copywriting | `prompts/06-ai-content/hook-opening-copy.md` |
+| [Humanized Writing Polish V3](humanized-writing/humanized-writing-polish-v3.md) | Humanized Writing | `prompts/06-ai-content/humanized-writing/humanized-writing-polish-v3.md` |
+| [Humanized Writing V1](humanized-writing/humanized-writing-v1.md) | Humanized Writing | `prompts/06-ai-content/humanized-writing/humanized-writing-v1.md` |
+| [Humanized Writing V2](humanized-writing/humanized-writing-v2.md) | Humanized Writing | `prompts/06-ai-content/humanized-writing/humanized-writing-v2.md` |
+| [Interview Outline Planner](interview-outline-planner.md) | Operations Support | `prompts/06-ai-content/interview-outline-planner.md` |
+| [Knowledge Base Writing Rebuilder](knowledge-base-writing-rebuilder.md) | 06 AI Content | `prompts/06-ai-content/knowledge-base-writing-rebuilder.md` |
+| [Life Advice Blogger](life-advice-blogger.md) | Persona Style | `prompts/06-ai-content/life-advice-blogger.md` |
+| [Livestream Script Planner](livestream-script-planner.md) | Operations Support | `prompts/06-ai-content/livestream-script-planner.md` |
+| [Medical Popular Science Article Generator](medical-popular-science-article-generator.md) | 06 AI Content | `prompts/06-ai-content/medical-popular-science-article-generator.md` |
+| [Nano Banana PPT](nano-banana-ppt.md) | 06 AI Content | `prompts/06-ai-content/nano-banana-ppt.md` |
+| [Nano Banana](nano-banana.md) | 06 AI Content | `prompts/06-ai-content/nano-banana.md` |
+| [Parenting Content Expert](parenting-content-expert.md) | Industry Content | `prompts/06-ai-content/parenting-content-expert.md` |
+| [Personal Finance Content Expert](personal-finance-content-expert.md) | Industry Content | `prompts/06-ai-content/personal-finance-content-expert.md` |
+| [Pet Content Expert](pet-content-expert.md) | Industry Content | `prompts/06-ai-content/pet-content-expert.md` |
+| [Private-Domain Sales Script Expert](private-domain-sales-script.md) | Operations Support | `prompts/06-ai-content/private-domain-sales-script.md` |
+| [Relationship Content Expert](relationship-content-expert.md) | Industry Content | `prompts/06-ai-content/relationship-content-expert.md` |
+| [Sanmao Style Memoir Generator](sanmao-style-memoir-generator.md) | 06 AI Content | `prompts/06-ai-content/sanmao-style-memoir-generator.md` |
+| [Seven-Second Account Launch Copy](seven-second-account-launch-copy.md) | Copywriting | `prompts/06-ai-content/seven-second-account-launch-copy.md` |
+| [Sharp Commentary Copy](sharp-commentary-copy.md) | Copywriting | `prompts/06-ai-content/sharp-commentary-copy.md` |
+| [Sora2 Character Video Ideas](sora2-character-video-ideas.md) | 06 AI Content | `prompts/06-ai-content/sora2-character-video-ideas.md` |
+| [Spoken Viral Script](spoken-viral-script.md) | Copywriting | `prompts/06-ai-content/spoken-viral-script.md` |
+| [Tech and Digital Content Expert](tech-digital-content-expert.md) | Industry Content | `prompts/06-ai-content/tech-digital-content-expert.md` |
+| [Title Alchemist Content](title-alchemist-content.md) | 06 AI Content | `prompts/06-ai-content/title-alchemist-content.md` |
+| [Title Optimizer](title-optimizer.md) | Content Tools | `prompts/06-ai-content/title-optimizer.md` |
+| [Topic Planner](topic-planner.md) | Content Tools | `prompts/06-ai-content/topic-planner.md` |
+| [Travel Guide Content Expert](travel-guide-content-expert.md) | Industry Content | `prompts/06-ai-content/travel-guide-content-expert.md` |
+| [WeChat Channels Operator](video-account-operator.md) | Platform Operations | `prompts/06-ai-content/video-account-operator.md` |
+| [Viral Opening Framework](viral-opening-copy.md) | Copywriting | `prompts/06-ai-content/viral-opening-copy.md` |
+| [Viral Remix Deconstruction Rewriter](viral-remix-deconstruction-rewriter.md) | Operations Support | `prompts/06-ai-content/viral-remix-deconstruction-rewriter.md` |
+| [Warm Conversation Blogger](warm-conversation-blogger.md) | Persona Style | `prompts/06-ai-content/warm-conversation-blogger.md` |
+| [WeChat Article Expert](wechat-article-expert.md) | Platform Operations | `prompts/06-ai-content/wechat-article-expert.md` |
+| [WeChat Article HTML Generator](wechat-article-html-generator.md) | 06 AI Content | `prompts/06-ai-content/wechat-article-html-generator.md` |
+| [Workplace Content Expert](workplace-content-expert.md) | Industry Content | `prompts/06-ai-content/workplace-content-expert.md` |
+| [Xiaohongshu Graphic Expert](xiaohongshu-graphic-expert.md) | Platform Operations | `prompts/06-ai-content/xiaohongshu-graphic-expert.md` |
+| [Xiaohongshu Title Generator](xiaohongshu-title-generator.md) | 06 AI Content | `prompts/06-ai-content/xiaohongshu-title-generator.md` |

@@ -2,13 +2,12 @@
 
 ## Unreleased
 
+- 将 `prompts-en/` 扩展为完整英文镜像，116 个中文提示词均已有同路径英文对应文件。
+- 更新 `README.en.md`、`prompts-en/README.md` 和各英文分类目录说明，使英文入口导航到完整英文提示词库。
 - 将《AI营销：从SEO到GEO》拆分出的 25 个提示词作者更新为姚金刚与向阳乔木，并补充双方 X 主页。
 - 从《AI营销：从SEO到GEO》提示词合集拆分并新增 25 个 GEO 营销实战模板，放入 `prompts/08-ai-marketing/`。
 - 新增 `prompts/08-ai-marketing/README.md`，按机会、原理、内容、信源、数据、增长、风险归类 AI营销提示词。
 - 更新 README、Prompts 说明、分类体系、全量目录和网页导航，中文提示词总数更新为 116 个。
-- 新增 `prompts-en/06-ai-content/`，同步生成 36 个英文内容与运营提示词文件。
-- 新增 `README.en.md` 和 `prompts-en/README.md`，英文说明文档中的提示词导航均指向英文提示词目录。
-- 更新仓库首页和网页导航，为英文说明文档与英文提示词增加入口。
 - 将新增的 36 个内容与运营提示词直接并入 `prompts/06-ai-content/`，并统一为仓库既有文件命名方式。
 - 更新 `prompts/06-ai-content/README.md`，按文案创作、人设风格、内容工具、平台运营、行业内容、运营辅助重新归类这批提示词。
 - 更新 README、Prompts 说明、分类体系和网页导航，在 AI内容分类中展示新的代表提示词入口。

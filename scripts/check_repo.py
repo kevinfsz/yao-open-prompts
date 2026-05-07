@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import sys
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT_ROOTS = [ROOT / 'prompts', ROOT / 'prompts-en']
+CHINESE_PROMPTS = ROOT / 'prompts'
+ENGLISH_PROMPTS = ROOT / 'prompts-en'
 REQUIRED = ['title', 'category', 'subcategory', 'source_section', 'author', 'version', 'status', 'tags']
 VALID_STATUS = {'active', 'draft', 'third-party-review'}
 
@@ -51,6 +54,25 @@ def main():
             errors.append(f'{rel}: contains Feishu span style')
         if 'images/《姚金刚提示词合集》' in body or 'files/《姚金刚提示词合集》' in body:
             warnings.append(f'{rel}: contains original attachment reference')
+
+    if ENGLISH_PROMPTS.exists():
+        chinese_files = [p for p in sorted(CHINESE_PROMPTS.rglob('*.md')) if p.name != 'README.md']
+        for path in chinese_files:
+            expected = ENGLISH_PROMPTS / path.relative_to(CHINESE_PROMPTS)
+            if not expected.exists():
+                errors.append(f'{expected.relative_to(ROOT)}: missing English mirror for {path.relative_to(ROOT)}')
+
+        english_files = [p for p in sorted(ENGLISH_PROMPTS.rglob('*.md')) if p.name != 'README.md']
+        for path in english_files:
+            rel = path.relative_to(ENGLISH_PROMPTS)
+            source = CHINESE_PROMPTS / rel
+            if not source.exists():
+                errors.append(f'{path.relative_to(ROOT)}: missing Chinese source mirror {source.relative_to(ROOT)}')
+            fm, body = parse_frontmatter(path)
+            if fm and fm.get('source_section') != f'prompts/{rel.as_posix()}':
+                errors.append(f'{path.relative_to(ROOT)}: source_section should be prompts/{rel.as_posix()}')
+            if re.search(r'[\u4e00-\u9fff]', body):
+                warnings.append(f'{path.relative_to(ROOT)}: contains Chinese characters in body')
 
     print(f'Checked {len(files)} prompt files.')
     if warnings:
